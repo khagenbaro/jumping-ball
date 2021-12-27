@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    background-color: #024;
+    height: 100vh;
+    position: relative;
+  }
+  .frame{
+    width: 800px;
+    height: 600px;
+    background-color: rgb(133, 173, 219);
+    align-items: center;
+    display: flex;
+    margin-left:auto ;
+    margin-right: auto;
+  }
+  .ball{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 5px rgb(104, 147, 153);
+    margin: 5px;
+  }
+  .floor{
+    background-color: white;
+    width: 800px;
+    height: 20px;
+    position: absolute;
+    top: 500px;
+    box-shadow: 0 0 15px 5px #08f;
+  }
+  .info{
+    color: white;
+    position: absolute;
+    width: 200px;
+    top: 15px;
+    left: 60px;
+  }
+  .notice{
+    display: flex;
+    color: wheat;
+    justify-content: center;
+    padding-top: 40%;
+    font-size:23px;
+    font-weight: 900;
+  }
+  .obstacles{
+    background-color: rgb(167, 67, 67);
+    width: 30px;
+    height: 30px;
+    left: 800px;
+    top: -30px;
+    position: relative;
+
+    /* margin-left: 220px; */
+    animation: move 5s infinite linear;
+    z-index: -0.5;
+
+  }
+  @keyframes move {
+    0%{
+      left: 800px;
+    }
+    100%{
+      left: 0px;
+    }
+
+  }
